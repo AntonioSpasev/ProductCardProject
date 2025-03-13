@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .product-card {
+            display: flex;
+            background: white;
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: black;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: lightgray;
+        }
+
+        .description {
+            font-size: 14px;
+            padding-left: 50px;
+            margin-bottom: 20px;
+        }
+
+        .colors {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .color-options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .black {
+            background: black;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .beige {
+            background: beige;
+        }
+
+        .purchase-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            width: 150px;
+            height: 40px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="nike-jordan.png" alt="Jordan Proto-lyte">
+        </div>
+        <div class="product-info">
+            <h1>Jordan Proto-Lyte</h1>
+            <h2>RUNNING COLLECTION</h2>
+            <p class="description">
+                Featuring soft foam cushioning and lightweight, woven fabric in the upper, The Jordan Proto-Lyte is made for all-day, bouncy comfort.
+                <b>Lightweight Breathability:</b> Lightweight woven fabric with real or synthetic leather provides breathable support.
+                <b>Cushioned Comfort:</b> A full-length foam midsole delivers lightweight, plush cushioning.
+                <b>Secure Traction:</b> Exaggerated herringbone-pattern outsole offers traction on a variety of surfaces.
+            </p>
+            <p class="colors">Available Colors:</p>
+            <div class="color-options">
+                <span class="color black"></span>
+                <span class="color red"></span>
+                <span class="color beige"></span>
+            </div>
+            <div class="purchase-section">
+                <span class="price">$149.99</span>
+                <button class="buy-button">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
